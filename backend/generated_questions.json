@@ -1,0 +1,132 @@
+[
+    {
+        "id": 1,
+        "question": "What English tense describes repeated or habitual actions in the past, e.g., 'I always eat breakfast'?",
+        "answers": [
+            {
+                "id": 1,
+                "text": "Present Perfect",
+                "isCorrect": false
+            },
+            {
+                "id": 2,
+                "text": "Past Simple",
+                "isCorrect": false
+            },
+            {
+                "id": 3,
+                "text": "Past Continuous",
+                "isCorrect": false
+            },
+            {
+                "id": 4,
+                "text": "Present Continuous",
+                "isCorrect": true
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "question": "How do you translate 'Sono arrivato a Roma ieri' into English?",
+        "answers": [
+            {
+                "id": 1,
+                "text": "I have arrived to Rome yesterday",
+                "isCorrect": false
+            },
+            {
+                "id": 2,
+                "text": "I went to Rome yesterday",
+                "isCorrect": true
+            },
+            {
+                "id": 3,
+                "text": "I have been to Rome for years",
+                "isCorrect": false
+            },
+            {
+                "id": 4,
+                "text": "I arrived in Rome last week",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "question": "What is the purpose of the Past Perfect Continuous tense?",
+        "answers": [
+            {
+                "id": 1,
+                "text": "Future actions",
+                "isCorrect": false
+            },
+            {
+                "id": 2,
+                "text": "Present Perfect",
+                "isCorrect": false
+            },
+            {
+                "id": 3,
+                "text": "Completed actions before another past event",
+                "isCorrect": true
+            },
+            {
+                "id": 4,
+                "text": "Past Continuous",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "question": "What reading technique involves making a general impression of the main ideas in a text?",
+        "answers": [
+            {
+                "id": 1,
+                "text": "Contextual Clues",
+                "isCorrect": false
+            },
+            {
+                "id": 2,
+                "text": "Skimming and scanning",
+                "isCorrect": true
+            },
+            {
+                "id": 3,
+                "text": "Close Reading",
+                "isCorrect": false
+            },
+            {
+                "id": 4,
+                "text": "Summarizing",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "question": "What type of verb combines with prepositions or adverbs to convey a specific meaning, e.g., 'pick up'?",
+        "answers": [
+            {
+                "id": 1,
+                "text": "Modal Verb",
+                "isCorrect": false
+            },
+            {
+                "id": 2,
+                "text": "Phrasal Verb",
+                "isCorrect": true
+            },
+            {
+                "id": 3,
+                "text": "Infinitive Verb",
+                "isCorrect": false
+            },
+            {
+                "id": 4,
+                "text": "Gerund Verb",
+                "isCorrect": false
+            }
+        ]
+    }
+]

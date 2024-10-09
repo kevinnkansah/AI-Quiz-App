@@ -1,0 +1,791 @@
+/*
+  Global Styles
+*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;600;700&display=swap');
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  --primary: #4c9ab4;
+  --blackberry: #005874;
+  --lychee: #e9e9e9;
+  --lychee-tint: #808080;
+  --lychee-shade: #b4bdc2;
+  --white: #fff;
+  --primary-gradient: linear-gradient(to bottom, #007ea6, #005874);
+  --shadow: color-mix(in lch, #005874, 95% transparent);
+  --primary-transparent: color-mix(in lch, #007ea6, 85% transparent);
+
+  display: grid;
+  place-items: center;
+
+  padding: 0;
+  width: 100%;
+  min-height: 100svh;
+
+  background-color: var(--lychee);
+
+  font: 400 normal 1.5rem/1.6 "Source Sans 3", sans-serif;
+  
+  color: var(--blackberry);
+}
+
+/*
+  Component Styles
+*/
+
+.App {
+  text-align: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: var(--lychee);
+  padding: 20px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.h1-header {
+  margin: 0;
+  width: 100%;
+  height: 30px;
+  padding-top: 0px;
+  font-size: 22px;
+  background-color: #f2f2f2;
+  background-image: url('/home/negus/Documents/AI Quiz App/frontend/public/ai-technology.png');
+  padding-left: 34px;
+  background-size: 25px 25px; /* Adjust logo size */
+  background-repeat: no-repeat;
+  background-position: 5px center;
+}
+
+.enter-page {
+  padding-top: 28px;
+  width: 870px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 0.4em;
+  border-color: #808080;
+
+}
+
+.quiz-corrections {
+  padding-top: 28px;
+
+}
+
+.enthusiasm {
+  font-size: 14px;
+}
+.quiz-container {
+  width: 449px;
+  height: 549px;
+  padding: 45px;
+  background: var(--lychee);
+  border-radius: 0.4em;
+  transition: all 0.3s ease-in-out;
+  border: 0.2em solid var(--lychee);
+}
+
+.quiz-container:hover {
+  margin-top: -30px;
+  border: 0.2em solid;
+  border-radius: 0.4em;
+  border-image: repeating-linear-gradient(to bottom, var(--lychee) 0%, var(--lychee) 25%, var(--lychee-shade) 50%, var(--lychee) 75%);
+}
+
+/*
+  Typography
+*/
+
+h1 {
+  width: 870px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--lychee-shade);
+  text-align: left;
+  color: var(--blackberry);
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: var(--blackberry);
+  margin-left: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+h3 {
+  margin-left: 20px;
+  text-decoration: underline;
+}
+
+p {
+  width: 870px;
+  font-size: 17px;
+  background-color: #f2f2f2;
+  text-align: left;
+  padding: 5px;
+  padding-left: 20px;
+  margin: 0px 20px 20px 0px;
+  border: #f2f2f2;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  outline: 0px;
+  position: relative;
+}
+
+
+
+b {
+  margin: 0px 20px 1px 20px;
+  padding: 0px 20px 1px 20px;
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+br {
+  margin-bottom: 5px;
+}
+
+.question {
+  font: 18px;
+  font-weight: bold;
+  width: 155px;
+  left: 102px;
+  font-size: 18px;
+  padding-left: 10px;
+  border:#acb8bd;
+  color:#d1d5d9;
+  text-align: left;
+  background-color: #005874;
+
+}
+
+.quiz-question {
+  width: 354px;
+}
+
+/*
+  Lists
+*/
+
+ul {
+  width: 870px;
+  display: block;
+  text-align: left;
+  padding-right: 10px;
+  padding-left: 0px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  outline: 0;
+}
+.quiz-answers{
+  width: 354px;
+}
+
+li {
+  display: block;
+  margin: 10px 10px;
+  padding: 10px 5px;
+  border-bottom: 1px solid #adadad;
+}
+
+li b {
+  padding-right: 10px;
+  padding-left: 0px;
+  overflow: auto; /* Changed to auto to allow scrolling only when needed */
+}
+
+li span {
+  display: block;
+  margin-top: 5px;
+  margin-left: 20px; /* Adjusted for better alignment */
+  text-align: left;
+}
+
+li .correct-answer {
+  color: #42ab01;
+  border-radius: 4px;
+  
+}
+
+span {
+  margin-left: 0px;
+}
+
+.correct-answer-span {
+  background-color: #808080;
+  display: contents;
+  color: #00aa17;
+  font-weight: bold;
+}
+
+.user-mistake-span {
+  display: contents;
+  color: #810000;
+  font-weight: bold;
+}
+
+/*
+  Forms
+*/
+
+label {
+  display: inline-flex;
+  align-items: center;
+  gap: 2rem;
+
+  padding: .6rem 1.2rem;
+
+  border-radius: .6rem;
+  background-color: #f2f2f2;
+
+  transition:
+    border-color .3s,
+    background-color .3s;
+
+  &:hover {
+    margin-left: 5px;
+    transition: opacity 0.2s linear, transform cubic-bezier(.5,-.75,.7,2) 0.25s ease-in-out;
+    background-color: var(--lychee-shade);
+  }
+
+  &:has(input[type="radio"]:checked) {
+    border-color: var(--primary);
+    background-color: var(--primary-transparent);
+  }
+}
+
+
+input[type="radio"] {
+  position: relative;
+  appearance: none;
+
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 6px;
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    inset: 0;
+
+    opacity: .25;
+
+    border-radius: 50%;
+    background-color: var(--primary);
+    background-image: var(--primary-gradient);
+
+    transition: opacity .3s;
+  }
+
+  &:checked::after {
+    opacity: 1;
+  }
+}
+
+/*
+  Buttons
+*/
+
+/* App.css */
+
+/* Styles for Previous Button */
+.previous-button {
+  font-weight: bold;
+  margin-right: 100px;
+  padding: .8rem 1.6rem;
+  border: none;
+  border-radius: .4rem;
+  box-shadow: 0 .6rem 1.2rem 0 var(--shadow);
+  transition:
+    background-color .3s,
+    transform .3s;
+
+  &:hover {
+    background-color: var(--primary);
+    transform: scale(1.1);
+  }
+}
+
+.previous-button:hover {
+  background-color: var(--primary); /* Tailwind's blue-700 */
+}
+
+/* Styles for Next Button */
+.next-button {
+  font-weight: bold;
+  margin-left: 102px;
+  padding: .8rem 1.6rem;
+  border: none;
+  border-radius: .4rem;
+  box-shadow: 0 .6rem 1.2rem 0 var(--shadow);
+  transition:
+    background-color .3s,
+    transform .3s;
+
+  &:hover {
+    background-color: var(--primary);
+    transform: scale(1.1);
+  }
+}
+
+.next-button:hover {
+  background-color: var(--primary) /* Tailwind's blue-700 */
+}
+
+/* Disable styles for buttons when disabled */
+.previous-button:disabled {
+  background-color: #d1d5db; /* Tailwind's gray-300 */
+  color: #6b7280; /* Tailwind's gray-600 */
+  &:hover {
+    background-color: #d1d5db;
+    transform: scale(1);
+  }
+}
+
+.next-button:disabled {
+  background-color: #d1d5db; /* Tailwind's gray-300 */
+  color: #6b7280; /* Tailwind's gray-600 */
+
+  &:hover {
+    transform: scale(1);
+    background-color: #d1d5db;
+  }
+}
+.enter-button, .start-button, .view-answers-button, .back-to-quiz-button {
+
+  font-weight: bold;
+  padding: .8rem 1.6rem;
+  border: none;
+  border-radius: .4rem;
+  color:var(--lychee);
+  background-color: var(--blackberry);
+  box-shadow: 0 .6rem 1.2rem 0 var(--shadow);
+  transition:
+    background-color .3s,
+    transform .3s;
+
+  &:hover {
+    background-color: var(--primary);
+    transform: scale(1.1);
+  }
+}
+
+.submit-button {
+  font-weight: bold;
+  margin-left: 85px;
+  padding: .8rem 1.6rem;
+  border: none;
+  border-radius: .4rem;
+  color: var(--lychee);
+  background-color: var(--primary);
+  box-shadow: 0 .6rem 1.2rem 0 var(--shadow);
+  transition:
+    background-color .3s,
+    transform .3s;
+}
+
+.submit-button:hover {
+  background-color: #42ab01;
+  animation: pulse512 1.5s infinite;
+  -webkit-animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+  0% {
+    box-shadow: 0 0 0 0 #4ad40066;
+  }
+  
+  70% {
+    box-shadow: 0 0 0 15px rgb(218 103 68 / 0%);
+  }
+  
+  100% {
+    box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+}
+
+/* From Uiverse.io by MuhammadHasann */ 
+.ai-quiz-button {
+  --black-700: hsla(0 0% 12% / 1);
+  --border_radius: 3px;
+  --transtion: 0.3s ease-in-out;
+  --offset: 2px;
+
+  cursor: pointer;
+  position: relative;
+  bottom: 36px;
+  left: 718px;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  transform-origin: center;
+
+  padding: 1rem 2rem;
+  background-color: transparent;
+
+  border: none;
+  border-radius: var(--border_radius);
+  transform: scale(calc(1 + (var(--active, 0) * 0.1)));
+
+  transition: transform var(--transtion);
+}
+
+.ai-quiz-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  height: 100%;
+  background-color: #032d2a;
+
+  border-radius: var(--border_radius);
+  box-shadow: inset 0 0.5px hsl(0, 0%, 100%), inset 0 -1px 2px 0 hsl(0, 0%, 0%),
+    0px 4px 10px -4px hsla(0 0% 0% / calc(1 - var(--active, 0))),
+    0 0 0 calc(var(--active, 0) * 0.375rem) hsla(169, 68%, 71%, 0.508);
+
+  transition: all var(--transtion);
+  z-index: 0;
+}
+
+.ai-quiz-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  height: 100%;
+  background-color: hsl(191, 96%, 38%);
+  background-image: radial-gradient(
+      at 51% 89%,
+      rgb(145, 248, 231) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 100% 100%, rgb(123, 219, 238) 0px, transparent 50%),
+    radial-gradient(at 22% 91%, rgb(153, 238, 220) 0px, transparent 50%);
+  background-position: top;
+
+  opacity: var(--active, 0);
+  border-radius: var(--border_radius);
+  transition: opacity var(--transtion);
+  z-index: 2;
+}
+
+.ai-quiz-button:is(:hover, :focus-visible) {
+  --active: 1;
+}
+.ai-quiz-button:active {
+  transform: scale(1);
+}
+
+.ai-quiz-button .dots_border {
+  --size_border: calc(100% + 2px);
+
+  overflow: hidden;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: var(--size_border);
+  height: var(--size_border);
+  background-color: transparent;
+
+  border-radius: var(--border_radius);
+  z-index: -10;
+}
+
+.ai-quiz-button .dots_border::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: left;
+  transform: rotate(0deg);
+
+  width: 100%;
+  height: 2rem;
+  background-color: rgb(0, 179, 255);
+
+  mask: linear-gradient(transparent 0%, rgb(255, 255, 255) 120%);
+  animation: rotate 2s linear infinite;
+}
+.ai-quiz-button:disabled{
+  cursor: not-allowed;
+  background-color: #032d2a;
+
+  &:hover {
+    transform: scale(1);
+    background-color: #032d2a;
+  }
+
+  .ai-quiz-button::after:disabled{
+    cursor: not-allowed;
+    background-color: #032d2a;
+  
+    &:hover {
+      transform: scale(1);
+      background-color: #032d2a;
+    }
+  }
+
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ai-quiz-button .sparkle {
+  position: relative;
+  z-index: 10;
+
+  width: 1.75rem;
+}
+
+.ai-quiz-button .sparkle .path {
+  fill: currentColor;
+  stroke: currentColor;
+
+  transform-origin: center;
+
+  color: hsl(0, 0%, 100%);
+}
+
+.ai-quiz-button:is(:hover, :focus) .sparkle .path {
+  animation: path 1.5s linear 0.5s infinite;
+}
+
+.ai-quiz-button .sparkle .path:nth-child(1) {
+  --scale_path_1: 1.2;
+}
+.ai-quiz-button .sparkle .path:nth-child(2) {
+  --scale_path_2: 1.2;
+}
+.ai-quiz-button .sparkle .path:nth-child(3) {
+  --scale_path_3: 1.2;
+}
+
+@keyframes path {
+  0%,
+  34%,
+  71%,
+  100% {
+    transform: scale(1);
+  }
+  17% {
+    transform: scale(var(--scale_path_1, 1));
+  }
+  49% {
+    transform: scale(var(--scale_path_2, 1));
+  }
+  83% {
+    transform: scale(var(--scale_path_3, 1));
+  }
+}
+
+.ai-quiz-button .text_button {
+  position: relative;
+  z-index: 10;
+
+  background-image: linear-gradient(
+    90deg,
+    rgb(255, 255, 255) 0%,
+    hsla(0 0% 100% / var(--active, 0)) 120%
+  );
+  background-clip: text;
+
+  font-size: 13px;
+  font-weight: bold;
+  width: 90px;
+  height: 12px;
+  padding: 0px;
+  color: transparent;
+}
+
+/* From Uiverse.io by adamgiebl */ 
+.dots-container {
+  fill:#005874;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #b3d4fc;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.dot:last-child {
+  margin-right: 0;
+}
+
+.dot:nth-child(1) {
+  animation-delay: -0.3s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: -0.1s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.1s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    background-color: #b3d4fc;
+    box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
+  }
+
+  50% {
+    transform: scale(1.2);
+    background-color: #67c0fb;
+    box-shadow: 0 0 0 10px rgba(178, 212, 252, 0);
+  }
+
+  100% {
+    transform: scale(0.8);
+    background-color: #b3d4fc;
+    box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.explanation-text {
+  background-color: #E9E9E9;
+  color: #626262;
+  width: 840px;
+}
+
+.explanation {
+  font-weight:500;
+  width: 840px;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.explanation.visible {
+  display: block;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.explanation.hidden {
+  animation: fadeOut 0.3s ease forwards;
+}
+
+.toggle-text {
+  font-weight: 600;
+  color:#668BB8;
+  align-items: center;
+  display: flex;
+}
+
+.show-hide-btn {
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: self-end;
+  transition: transform 0.3s ease-in-out;
+}
+
+.show-hide-btn:hover {
+  transform: translateX(10px);
+}
+
+.eye-container {
+  --color: #668bb8;
+  --size: 30px;
+  font-size: var(--size);
+  fill: var(--color);
+  cursor: pointer;
+  user-select: none;
+}
+
+.eye-container:hover {
+  background-color: #f2f2f2;
+}
+
+.eye-container .eye,
+.eye-container .eye-slash {
+  margin-left: 10px;
+  position: relative;
+  animation: keyframes-fill 0.5s;
+}
+
+.eye-container input:checked ~ .eye {
+  display: none;
+}
+
+.eye-container input:checked ~ .eye-slash {
+  display: block;
+}
+
+.eye-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}

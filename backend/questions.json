@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "question": "What English tense describes completed past actions, e.g., 'I went to Rome'?",
+    "answers": [
+      { "id": 1, "text": "Present Perfect", "isCorrect": false },
+      { "id": 2, "text": "Past Simple", "isCorrect": true },
+      { "id": 3, "text": "Present Continuous", "isCorrect": false },
+      { "id": 4, "text": "Future Perfect", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "How do you translate 'Sono stato in Italia per due settimane' into English?",
+    "answers": [
+      { "id": 1, "text": "I'm going to Italy for two weeks", "isCorrect": false },
+      { "id": 2, "text": "I have been to Italy for two weeks", "isCorrect": false },
+      { "id": 3, "text": "I was in Italy for two weeks", "isCorrect": true },
+      { "id": 4, "text": "I will be in Italy for two weeks", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "What is the purpose of the Past Perfect tense?",
+    "answers": [
+      { "id": 1, "text": "Ongoing actions", "isCorrect": false },
+      { "id": 2, "text": "Completed actions before another past event", "isCorrect": true },
+      { "id": 3, "text": "Future actions", "isCorrect": false },
+      { "id": 4, "text": "Habitual actions", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "What does 'I'll meet my friend tomorrow' imply?",
+    "answers": [
+      { "id": 1, "text": "The meeting has already occurred", "isCorrect": false },
+      { "id": 2, "text": "The meeting is happening now", "isCorrect": false },
+      { "id": 3, "text": "The meeting is scheduled for the future", "isCorrect": true },
+      { "id": 4, "text": "The meeting is cancelled", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "What does 'Actually' typically convey in English?",
+    "answers": [
+      { "id": 1, "text": "Currently", "isCorrect": false },
+      { "id": 2, "text": "In reality", "isCorrect": true },
+      { "id": 3, "text": "Previously", "isCorrect": false },
+      { "id": 4, "text": "Never", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "What reading technique involves quickly scanning text for the main idea?",
+    "answers": [
+      { "id": 1, "text": "Critical Analysis", "isCorrect": false },
+      { "id": 2, "text": "Contextual Clues", "isCorrect": false },
+      { "id": 3, "text": "Skimming", "isCorrect": true },
+      { "id": 4, "text": "Summarizing", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "What type of verb combines with prepositions or adverbs, e.g., 'pick up' or 'get on'?",
+    "answers": [
+      { "id": 1, "text": "Phrasal Verb", "isCorrect": true },
+      { "id": 2, "text": "Modal Verb", "isCorrect": false },
+      { "id": 3, "text": "Auxiliary Verb", "isCorrect": false },
+      { "id": 4, "text": "Transitive Verb", "isCorrect": false }
+    ]
+  }
+]
