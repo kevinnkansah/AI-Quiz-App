@@ -1,130 +1,104 @@
 [
     {
         "id": 1,
-        "question": "What English tense describes repeated or habitual actions in the past, e.g., 'I always eat breakfast'?",
+        "question": "What English grammatical structure indicates the completion of a past action or state, e.g., 'I have eaten'?",
         "answers": [
             {
                 "id": 1,
-                "text": "Present Perfect",
+                "text": "Tense",
                 "isCorrect": false
             },
             {
                 "id": 2,
-                "text": "Past Simple",
+                "text": "Mood",
                 "isCorrect": false
             },
             {
                 "id": 3,
-                "text": "Past Continuous",
-                "isCorrect": false
+                "text": "Aspect",
+                "isCorrect": true
             },
             {
                 "id": 4,
-                "text": "Present Continuous",
-                "isCorrect": true
+                "text": "Voice",
+                "isCorrect": false
             }
         ]
     },
     {
         "id": 2,
-        "question": "How do you translate 'Sono arrivato a Roma ieri' into English?",
+        "question": "What is the term for a type of verb that combines with prepositions or adverbs?",
         "answers": [
             {
                 "id": 1,
-                "text": "I have arrived to Rome yesterday",
+                "text": "Phrasal Verb",
                 "isCorrect": false
             },
             {
                 "id": 2,
-                "text": "I went to Rome yesterday",
-                "isCorrect": true
-            },
-            {
-                "id": 3,
-                "text": "I have been to Rome for years",
+                "text": "Modal Verb",
                 "isCorrect": false
             },
             {
+                "id": 3,
+                "text": "Infinitive Verb",
+                "isCorrect": true
+            },
+            {
                 "id": 4,
-                "text": "I arrived in Rome last week",
+                "text": "Gerund Verb",
                 "isCorrect": false
             }
         ]
     },
     {
         "id": 3,
-        "question": "What is the purpose of the Past Perfect Continuous tense?",
+        "question": "What is the primary purpose of using passive voice in writing?",
         "answers": [
             {
                 "id": 1,
-                "text": "Future actions",
+                "text": "To emphasize the subject",
                 "isCorrect": false
             },
             {
                 "id": 2,
-                "text": "Present Perfect",
-                "isCorrect": false
-            },
-            {
-                "id": 3,
-                "text": "Completed actions before another past event",
+                "text": "To focus attention on the action rather than the doer",
                 "isCorrect": true
             },
             {
+                "id": 3,
+                "text": "To convey a sense of obligation or duty",
+                "isCorrect": false
+            },
+            {
                 "id": 4,
-                "text": "Past Continuous",
+                "text": "To create suspense or drama",
                 "isCorrect": false
             }
         ]
     },
     {
         "id": 4,
-        "question": "What reading technique involves making a general impression of the main ideas in a text?",
+        "question": "What does the term 'subjunctive mood' refer to in English grammar?",
         "answers": [
             {
                 "id": 1,
-                "text": "Contextual Clues",
+                "text": "A type of conditional sentence",
                 "isCorrect": false
             },
             {
                 "id": 2,
-                "text": "Skimming and scanning",
-                "isCorrect": true
+                "text": "A type of imperative sentence",
+                "isCorrect": false
             },
             {
                 "id": 3,
-                "text": "Close Reading",
-                "isCorrect": false
-            },
-            {
-                "id": 4,
-                "text": "Summarizing",
-                "isCorrect": false
-            }
-        ]
-    },
-    {
-        "id": 5,
-        "question": "What type of verb combines with prepositions or adverbs to convey a specific meaning, e.g., 'pick up'?",
-        "answers": [
-            {
-                "id": 1,
-                "text": "Modal Verb",
-                "isCorrect": false
-            },
-            {
-                "id": 2,
-                "text": "Phrasal Verb",
+                "text": "A type of mood that expresses doubt or uncertainty about a hypothetical situation",
                 "isCorrect": true
             },
             {
-                "id": 3,
-                "text": "Infinitive Verb",
-                "isCorrect": false
-            },
-            {
                 "id": 4,
-                "text": "Gerund Verb",
+                "text": "A type of verb tense",
                 "isCorrect": false
             }
         ]
